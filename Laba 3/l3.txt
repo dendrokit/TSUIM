@@ -1,0 +1,66 @@
+.model flat, stdcall
+.stack 100h
+
+.data
+    array_times dd 1, 1 ; первые два числа
+    array DWORD 70 dup(?) ; массив для хранения чисел
+    R DWORD ? ; переменная для хранения последнего значения массива
+
+.code
+ExitProcess PROTO STDCALL : DWORD
+Start:
+    ; Инициализация FPU
+    finit
+
+    ; Загрузка начальных значений в регистры FPU
+    fild dword ptr[array_times]
+    fistp dword ptr[array+4]
+    fild dword ptr[array_times+4]
+    fistp dword ptr[array + 8]
+    mov ecx, 2 ; начальный индекс для цикла
+
+fill_array:
+    ; Загрузка двух последних чисел из массива в регистры FPU
+    mov eax, ecx
+    sub eax, 1
+    imul eax, eax, 4  ; Умножаем на размер элемента массива (4 байта)
+    fild dword ptr[array + eax]  ; Загружаем предпоследнее число из массива в стек FPU
+    mov eax, ecx
+    imul eax, eax, 4  ; Умножаем на размер элемента массива (4 байта)
+    fild dword ptr[array + eax]  ; Загружаем последнее число из массива в стек FPU
+
+    ; Сложение двух чисел в регистрах FPU
+    fadd
+
+    ; Сохранение результата в массив
+    mov eax, ecx
+    inc eax
+    imul eax, eax, 4  ; Умножаем на размер элемента массива (4 байта)
+    fistp dword ptr[array + eax] ; Сохраняем результат в следующую ячейку массива
+
+    ; Проверка на каждое третье число и изменение знака при необходимости
+    mov ebx, ecx
+    xor edx, edx  ; Обнуляем edx перед делением
+    mov ebx, 3
+    div ebx       ; Делим eax на ecx, результат хранится в eax, остаток в edx
+    cmp edx, 0    ; Проверяем остаток от деления
+    jne continue_loop ; Если остаток не равен 0, продолжаем цикл
+    inc ecx
+    fild dword ptr[array + ecx*4]
+    fchs              ; Если остаток равен 0, изменяем знак числа
+    fistp dword ptr[array + ecx*4]
+    dec ecx
+continue_loop:
+
+    inc ecx ; увеличиваем индекс
+    cmp ecx, 70
+    jl fill_array ; продолжаем заполнять массив до 70
+
+mov eax, DWORD PTR [array + 272] ; Загружаем последнее число из массива для сохранения в переменной R
+; Сохраняем значение в R
+mov R, eax
+jmp end_program
+
+end_program:
+    INVOKE ExitProcess, R
+END Start
