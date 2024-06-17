@@ -1,0 +1,96 @@
+HI-TECH Software 8051-C Compiler V9.60
+
+Linker command line:
+
+--edf=C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\dat\en_msgs.txt \
+  -h+Z:\project1.sym -z -Q8051AH -ol.obj -MZ:\project1.map -E1 \
+  -ver=8051-C#V9.60 -ACODE=00h-0FFFh -pvectors=00h \
+  -prbit=0/20h,rbss,rdata/CODE,irdata/CODE,idata/rbss -pbss=XDATA/idata \
+  -pdata=CODE+100h -pconst=CODE+100h -pstrings=CODE+100h -pnvram=bss,heap \
+  C:\Users\class\AppData\Local\Temp\s5qk.obj Z:\main_0.obj \
+  C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib 
+
+Object code version is 3.8
+
+Machine type is 8051AH
+
+Call graph:
+
+*start1 size 0,0 offset 0
+*    _main size 0,21 offset 0
+*        _msec size 0,2 offset 21
+
+		Name          Link     Load   Length Selector Space Scale
+C:\Users\class\AppData\Local\Temp\s5qk.obj
+		vectors          0        0        3       0     0
+		text           167      167       14     100     0
+Z:\main_0.obj   data           100      100        8     100     0
+		text             3        3       EA       0     0
+
+C:\PROGRA~2\HI-TEC~1\HC51\lite\9.60\lib\51--nsc.lib
+powerup.obj     text            ED       ED        3       0     0
+str_cops.obj    text           108      108       41     100     0
+mul.obj         text           149      149       1E     100     0
+
+COMMON          rbss            20       20       17      20     1
+
+TOTAL		Name          Link     Load   Length
+	CLASS	CODE     
+		vectors          0        0        3
+		data           100      100        8
+		text           167      167       14
+		text             3        3       EA
+		text            ED       ED        3
+		text           108      108       41
+		text           149      149       1E
+
+	CLASS	DATA     
+		rbss            20       20       17
+
+	CLASS	XDATA    
+
+	CLASS	BITSEG   
+
+
+
+SEGMENTS	Name		Load	Length	 Top	Selector    Space Class
+
+		vectors         000000	0000F0	0000F0	       0       0  CODE    
+		rbit            000020	000017	000037	      20       1  BITSEG  
+		data            000100	00007B	00017B	     100       0  CODE    
+
+
+UNUSED ADDRESS RANGES
+
+	CODE             0F0-0FF
+	                 17B-FFF
+
+                                  Symbol Table
+
+?a_main        rbss    020  ?a_msec        rbss    035
+__Bbss         bss     037  __Bidata       idata   037
+__Birdata      irdata  003  __Brbit        rbit    020
+__Brdata       rdata   003  __Hbss         bss     037
+__Hcode        code    037  __Hconst       const   100
+__Hdata        data    108  __Hheap        heap    037
+__Hidata       idata   037  __Hirdata      irdata  037
+__Hnvram       nvram   037  __Hrbit        rbit    000
+__Hrbss        rbss    037  __Hrdata       rdata   037
+__Hstrings     strings 100  __Htext        text    037
+__Hvectors     vectors 003  __Lbss         bss     037
+__Lcode        code    037  __Lconst       const   100
+__Ldata        data    100  __Lheap        heap    037
+__Lidata       idata   037  __Lirdata      irdata  037
+__Lnvram       nvram   037  __Lrbit        rbit    000
+__Lrbss        rbss    020  __Lrdata       rdata   037
+__Lstrings     strings 100  __Ltext        text    037
+__Lvectors     vectors 000  __S0           (abs)   17B
+_exit          text    178  _main          text    033
+_msec          text    003  awmul          text    149
+intlevel0      (abs)   000  intlevel1      (abs)   000
+lwmul          text    149  powerup        text    0ED
+small_model    (abs)   001  stack_internal (abs)   001
+start          vectors 000  start1         text    167
+str_copy       text    11E  str_load       text    11E
+str_xcopy      text    108  strx_copy      text    11E
+strx_load      text    11E  strx_xcopy     text    108

@@ -1,0 +1,90 @@
+__Lrdata 37 FFFFFFCC DATA
+__Hrbss 37 0 DATA
+__Lrbss 20 0 DATA
+strx_xcopy 108 0 CODE
+__Birdata 3 FFFFFFCC DATA
+__Hirdata 37 FFFFFFCC DATA
+__Lirdata 37 FFFFFFCC DATA
+powerup ED 0 CODE
+__Htext 37 0
+__Ltext 37 0
+strx_copy 11E 0 CODE
+__Hcode 37 0
+__Lcode 37 0
+__Hdata 108 0 CODE
+__Hconst 100 0 CODE
+__Ldata 100 0 CODE
+__Lconst 100 0 CODE
+__Bbss 37 0 XDATA
+__Hbss 37 0 XDATA
+__Hstrings 100 0 CODE
+__Lbss 37 0 XDATA
+__Lstrings 100 0 CODE
+?a_msec 35 0 DATA
+str_xcopy 108 0 CODE
+__S0 17B 0
+start1 167 0 CODE
+__Hnvram 37 0 XDATA
+small_model 1 0
+__Lnvram 37 0 XDATA
+_msec 3 0 CODE
+__Hheap 37 0 XDATA
+__Lheap 37 0 XDATA
+_main 33 0 CODE
+str_copy 11E 0 CODE
+awmul 149 0 CODE
+?a_main 20 0 DATA
+lwmul 149 0 CODE
+_exit 178 0 CODE
+start 0 0 CODE
+intlevel0 0 0
+strx_load 11E 0 CODE
+__Brbit 20 20 BITSEG
+str_load 11E 0 CODE
+__Hrbit 0 20 BITSEG
+intlevel1 0 0
+__Hvectors 3 0 CODE
+__Lrbit 0 20 BITSEG
+__Lvectors 0 0 CODE
+__Bidata 37 0 DATA
+__Hidata 37 0 DATA
+__Lidata 37 0 DATA
+stack_internal 1 0
+__Brdata 3 FFFFFFCC DATA
+__Hrdata 37 FFFFFFCC DATA
+%segments
+vectors 0 EF CODE
+rbit 0 16 BITSEG
+data 100 17A CODE
+%locals
+Z:\main_0.obj
+C:\Users\class\Desktop\WSPR4\project1\main.c
+5 3 0 CODE
+6 9 0 CODE
+8 B 0 CODE
+9 E 0 CODE
+10 11 0 CODE
+11 13 0 CODE
+12 15 0 CODE
+6 17 0 CODE
+14 30 0 CODE
+18 33 0 CODE
+21 36 0 CODE
+22 45 0 CODE
+24 4B 0 CODE
+25 52 0 CODE
+24 72 0 CODE
+28 8C 0 CODE
+29 8F 0 CODE
+30 92 0 CODE
+31 95 0 CODE
+32 98 0 CODE
+33 9B 0 CODE
+34 9E 0 CODE
+36 A5 0 CODE
+37 AC 0 CODE
+38 B3 0 CODE
+36 CA 0 CODE
+40 E4 0 CODE
+41 E7 0 CODE
+42 E9 0 CODE

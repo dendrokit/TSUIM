@@ -1,0 +1,97 @@
+__Lrdata 2A FFFFFFD9 DATA
+__Hrbss 2A 0 DATA
+__Lrbss 20 0 DATA
+__Birdata 3 FFFFFFD9 DATA
+__Hirdata 2A FFFFFFD9 DATA
+__Lirdata 2A FFFFFFD9 DATA
+powerup 175 0 CODE
+__Htext 2A 0
+__Ltext 2A 0
+__Hcode 2A 0
+?a_imp 26 0 DATA
+__Lcode 2A 0
+__Hdata 100 0 CODE
+__Hconst 100 0 CODE
+__Ldata 100 0 CODE
+__Lconst 100 0 CODE
+__Bbss 2A 0 XDATA
+__Hbss 2A 0 XDATA
+__Hstrings 100 0 CODE
+__Lbss 2A 0 XDATA
+__Lstrings 100 0 CODE
+__S0 178 0
+start1 161 0 CODE
+__Hnvram 2A 0 XDATA
+small_model 1 0
+__Lnvram 2A 0 XDATA
+_flag 22 0 DATA
+_rrrb 24 0 DATA
+__Hheap 2A 0 XDATA
+__Lheap 2A 0 XDATA
+_main FD 0 CODE
+_exit 172 0 CODE
+_brrr 20 0 DATA
+start 0 0 CODE
+intlevel0 0 0
+_imp 3 0 CODE
+__Brbit 20 20 BITSEG
+__Hrbit 0 20 BITSEG
+intlevel1 0 0
+__Hvectors 3 0 CODE
+__Lrbit 0 20 BITSEG
+__Lvectors 0 0 CODE
+__Bidata 2A 0 DATA
+__Hidata 2A 0 DATA
+__Lidata 2A 0 DATA
+stack_internal 1 0
+__Brdata 3 FFFFFFD9 DATA
+__Hrdata 2A FFFFFFD9 DATA
+%segments
+vectors 0 177 CODE
+rbit 0 9 BITSEG
+%locals
+Z:\main_0.obj
+E:\WSPR7\project1\main.c
+7 3 0 CODE
+8 6 0 CODE
+9 E 0 CODE
+11 18 0 CODE
+13 33 0 CODE
+14 37 0 CODE
+15 3F 0 CODE
+16 4F 0 CODE
+17 54 0 CODE
+18 5C 0 CODE
+22 6C 0 CODE
+23 73 0 CODE
+24 75 0 CODE
+26 83 0 CODE
+28 9E 0 CODE
+29 A2 0 CODE
+30 AA 0 CODE
+31 BA 0 CODE
+32 BF 0 CODE
+33 C7 0 CODE
+37 D7 0 CODE
+39 DE 0 CODE
+40 E0 0 CODE
+41 ED 0 CODE
+42 F9 0 CODE
+45 FD 0 CODE
+46 FF 0 CODE
+47 104 0 CODE
+49 109 0 CODE
+50 10C 0 CODE
+51 10F 0 CODE
+53 112 0 CODE
+54 115 0 CODE
+55 117 0 CODE
+56 119 0 CODE
+60 11B 0 CODE
+62 132 0 CODE
+64 139 0 CODE
+65 13E 0 CODE
+66 143 0 CODE
+67 150 0 CODE
+58 15C 0 CODE
+69 15E 0 CODE

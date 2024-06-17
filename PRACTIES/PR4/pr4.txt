@@ -1,0 +1,43 @@
+#include <8051.h>
+
+
+void msec (int x) 
+{	
+	while(x-- > 0) 
+	{
+		TH0 = (-10000) >> 8;
+		TL0 = -10000;
+		TR0 = 1;
+		TF0 = 0;
+		TR0 = 0;
+	}
+}
+
+
+void main() 
+{
+	int i;
+	unsigned char array[5];
+	unsigned int T[5] = {5, 5, 5, 5, 5};
+	unsigned int times = 5;
+	
+	for (i=0; i<times; i++) {
+		T[i] *= 40;
+	}	
+
+	TMOD = 0x1; 
+	array[0] = 0x1; 
+	array[1] = 0x6;
+	array[2] = 0x20;
+	array[3] = 0xC0;
+	array[4] = 0x18;
+	P1 = 0x0;
+	msec(2);
+
+	for(i=0;i<times;i++) {
+		P1 = array[i]; 
+		msec(T[i]); 
+	}
+	P1 = 0x0;
+	while(1);
+}

@@ -1,0 +1,83 @@
+__Lrdata 2B FFFFFFD8 DATA
+__Hrbss 2B 0 DATA
+__Lrbss 20 0 DATA
+strx_xcopy 3 0 CODE
+__Birdata 3 FFFFFFD8 DATA
+__Hirdata 2B FFFFFFD8 DATA
+__Lirdata 2B FFFFFFD8 DATA
+powerup 58 0 CODE
+__Htext 2B 0
+__Ltext 2B 0
+strx_copy 19 0 CODE
+__Hcode 2B 0
+__Lcode 2B 0
+__Hdata 109 0 CODE
+__Hconst 100 0 CODE
+__Ldata 100 0 CODE
+__Lconst 100 0 CODE
+__Bbss 2B 0 XDATA
+__Hbss 2B 0 XDATA
+__Hstrings 100 0 CODE
+__Lbss 2B 0 XDATA
+__Lstrings 100 0 CODE
+str_xcopy 3 0 CODE
+__S0 22C 0
+start1 44 0 CODE
+__Hnvram 2B 0 XDATA
+small_model 1 0
+__Lnvram 2B 0 XDATA
+__Hheap 2B 0 XDATA
+__Lheap 2B 0 XDATA
+_main 109 0 CODE
+str_copy 19 0 CODE
+?a_main 20 0 DATA
+_exit 55 0 CODE
+start 0 0 CODE
+intlevel0 0 0
+strx_load 19 0 CODE
+__Brbit 20 20 BITSEG
+str_load 19 0 CODE
+__Hrbit 0 20 BITSEG
+intlevel1 0 0
+__Hvectors 3 0 CODE
+__Lrbit 0 20 BITSEG
+__Lvectors 0 0 CODE
+__Bidata 2B 0 DATA
+__Hidata 2B 0 DATA
+__Lidata 2B 0 DATA
+stack_internal 1 0
+__Brdata 3 FFFFFFD8 DATA
+__Hrdata 2B FFFFFFD8 DATA
+%segments
+vectors 0 5A CODE
+rbit 0 A BITSEG
+data 100 22B CODE
+%locals
+Z:\main_0.obj
+E:\WSPR5\project1\main.c
+3 109 0 CODE
+7 10C 0 CODE
+8 11B 0 CODE
+9 11E 0 CODE
+10 121 0 CODE
+11 124 0 CODE
+12 127 0 CODE
+13 12A 0 CODE
+14 12D 0 CODE
+17 130 0 CODE
+18 132 0 CODE
+19 14C 0 CODE
+20 166 0 CODE
+21 180 0 CODE
+23 182 0 CODE
+24 184 0 CODE
+25 19E 0 CODE
+26 1B8 0 CODE
+27 1D2 0 CODE
+29 1D4 0 CODE
+30 1D6 0 CODE
+31 1EF 0 CODE
+32 209 0 CODE
+34 223 0 CODE
+16 225 0 CODE
+36 228 0 CODE
